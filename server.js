@@ -2,7 +2,6 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const sqlite3 = require("sqlite3").verbose();
 const cors = require("cors");
-const { take } = require("rxjs");
 
 const app = express();
 const transaction = new sqlite3.Database("./Transaction.db");
